@@ -4,12 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/progress.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Video Player</title>
 </head>
 
 <body>
-    <script src="app.js"></script>
+    <h1>Custom Video Player</h1>
+    <video src="/videos/gone.mp4" class="screen" id="video" poster="/img/poster.png"></video>
+    <div class="controls">
+        <button class="btn" id="play">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
+        <button class="btn" id="play">
+            <i class="fa fa-stop fa-2x"></i>
+        </button>
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+        <span id="timestamp" class="timestamp">00:00</span>
+    </div>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
